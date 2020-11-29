@@ -30,14 +30,12 @@
 
     <!-- NAV BAR -->
     <header>
-        <nav class="navbar navbar-expand-md fixed-top">
+        <nav class="navbar navbar-expand-md fixed-top navbar-custom">
             <a class="navbar-brand" href="index.html">Win & Archery</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff; font-size:28px;"></i></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
-
-
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mr-2 ">
@@ -49,7 +47,8 @@
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             ABOUT US
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div id="drop1" class="dropdown-menu animate slideIn navbar-custom"
+                            aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="coach.html">Meet Our Coach</a>
                             <a class="dropdown-item" href="coachingApproach.html">Our Coaching Approach</a>
                             <div class="dropdown-divider"></div>
@@ -61,7 +60,7 @@
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             ARCHERY PROGRAMS
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Recreational Archery</a>
                             <a class="dropdown-item" href="#">Competion Olympic Recurve</a>
                             <div class="dropdown-divider"></div>
@@ -74,7 +73,7 @@
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             ANNOUNCEMENTS
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Awards</a>
                             <a class="dropdown-item" href="#">Press</a>
                             <div class="dropdown-divider"></div>
@@ -83,11 +82,11 @@
                     </li>
                     <li class="nav-item">
                         <a href="#"><button data-toggle="modal" data-target="#loginModal" type="button"
-                                class="btn mx-3 my-auto login-button">MEMBER LOGIN</button></a>
+                                class="btn mx-3 login-button">MEMBER LOGIN</button></a>
                     </li>
                     <li class="nav-item">
                         <a href="#"><button data-toggle="modal" data-target="#contactModal" type="button"
-                                class="btn btn-light mx-3 my-auto contact-button">CONTACT US</button></a>
+                                class="btn btn-light mx-3 contact-button">CONTACT US</button></a>
                     </li>
                 </ul>
 
@@ -96,62 +95,7 @@
     </header>
 
     <!-- NEW CAROUSEL -->
-    <div class="container-fluid ">
-        <div class="row">
-            <div class="col-fluid">
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="images/field.jpg" alt="Archery Field">
-                            <div class="carousel-caption p-1">
-                                <h3>The Path To Gold</h3>
-                                <p class="d-none d-sm-block">Over the last three years, Win & Archery’s Olympic
-                                    Recurve
-                                    Archery Team has earned 75+ medals at local, state and national competitions.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="images/zach.jpg" alt="Acher 1">
-                            <div class="carousel-caption p-1">
-                                <h3>Learning to Connect</h3>
-                                <p class="d-none d-sm-block">
-                                    True connection is priceless. Between both coach and student, as well as arrow
-                                    and target. Contact us today to get started.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="images/eric.jpg" alt="Archer 2">
-                            <div class="carousel-caption p1">
-                                <h3>A Life’s Mission</h3>
-                                <p class="d-none d-sm-block">
-                                    With 40 years of archery experience and 133 international medals, our coach is
-                                    dedicated to helping our archers reach their full potential.</p>
-                            </div>
-                        </div>
-
-                        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
+  
     <!-- Main Content -->
     <div class="container">
         <div class="row border-top border-dark">
@@ -222,7 +166,7 @@
 
 
     <!-- Modal -->
-    <!-- <div class="modal fade" id="loginModal" role="dialog">
+    <!-- <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog"> -->
 
     <!-- Modal content-->
@@ -258,91 +202,7 @@
     </div> -->
 
 
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h4 class="modal-title w-100 font-weight-bold"><img src="images/logo-light.png" class="modal-logo"
-                            alt="Win and Archery Logo"></h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body mx-2">
-                    <div class="md-form">
-                        <i class="fas fa-envelope prefix grey-text "></i>
-                        <input type="email" id="defaultForm-email" class="form-control validate">
-                        <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
-                    </div>
 
-                    <div class="md-form mb-4">
-                        <i class="fas fa-lock prefix grey-text"></i>
-                        <input type="password" id="defaultForm-pass" class="form-control validate">
-                        <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
-                    </div>
-
-                    <div>
-                        <button class="btn btn-primary btn-block">Login</button>
-                    </div>
-
-                </div>
-                <div class="modal-footer d-flex justify-content-center">
-                    <p><a role="button" data-toggle="modal" data-target="#contactModal" data-dismiss="modal"
-                            type="button">Register</a> or <a role="button" data-toggle="modal"
-                            data-target="#contactModal" data-dismiss="modal" type="button"> Forgot Password </a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <!-- Login Modal -->
-    <!-- <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
-    <!-- Contact Modal -->
-    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- FOOTER BEGIN -->
 
     <footer class="footer">
@@ -387,7 +247,7 @@
                 <div class="col-sm-4 px-5">
                     <h5>Contact Us</h5>
                     <div class="row">
-                        <div class="col-9 ">
+                        <div class="col-7 ">
                             <a role="button" class="btn-link" id="address-links" href="tel:+17026797198">
                                 <p><span class="custom-address">Win & Archery</span> <br />
                                     <i class="fa fa-home custom-address-home">
